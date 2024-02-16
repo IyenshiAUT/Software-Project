@@ -1,7 +1,12 @@
 import sys
 
+
 def dog():
     print("Baw")
+
+def cat():
+    print("Meow")
+
 
 def default():
     print("Hello")
@@ -9,6 +14,8 @@ def default():
 def main():
     if sys.arg[1]=='dog':
         dog()
+    elif sys.argv[1]=='cat':
+        cat()
     else:
         default()
 
